@@ -29,7 +29,6 @@ function App() {
   }
 
   function unfollow(id){
-    
     removeFavorite(id).then(() => {
       const filtered_favorites = favorites.filter((favorite) => {
         return favorite.id !== id;
